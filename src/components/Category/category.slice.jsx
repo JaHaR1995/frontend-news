@@ -8,7 +8,7 @@ export const fetchCategory = createAsyncThunk(
   "fetch/category",
   async (_, thunkAPI) => {
     try {
-      const category = await fetch("http://localhost:4000/category");   
+      const category = await fetch("http://localhost:4000/category");    
       return category.json();
     } catch (error) {
       console.log(error);
@@ -16,7 +16,7 @@ export const fetchCategory = createAsyncThunk(
   }
 );
 
-export const categorySlice = createSlice({   
+export const categorySlice = createSlice({
   name: "category",
   initialState,
   reducers: {},

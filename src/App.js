@@ -4,7 +4,10 @@ import Footer from "./components/Footer";
 import News from "./components/News/News";
 import "./components/News/News.css";
 import { Route, Routes } from "react-router-dom";
-import Main from "./components/pages/Main";
+import Main from "./components/pages/Main"; 
+import Users from "./components/Users/Users";
+import Comment from "./components/Comments/Comments";  
+
 
 function App() {
   return (
@@ -16,6 +19,8 @@ function App() {
         <Route path="/news/:newsId" element={<Main/>} /> 
       </Routes>
       <Footer />
+      <Users/>  
+    
     </>
   );
 }

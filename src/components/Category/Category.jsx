@@ -13,7 +13,7 @@ const Category = () => {
   return (
     <div className="siteheader">
       {category.map((elem) => {
-        return (
+        return (                         
           <Link to={`/category/${elem._id}`}>  
             <div key={elem.id} className="category">  
               {elem.name}

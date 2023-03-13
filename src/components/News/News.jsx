@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 const News = () => {
   const { categoryId } = useParams();  
+  
 
   const news = useSelector((state) =>
     state.newsSlice.news.filter((item) => {   
